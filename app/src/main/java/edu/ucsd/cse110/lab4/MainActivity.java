@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        Utilities.showAlert(this, String.format("I got the number %d", maxCount));
+        //Utilities.showAlert(this, String.format("I got the number %d", maxCount));
+        // Put it in the Intent.
+        intent.putExtra("max_count", maxCount);
+        startActivity(intent);
     }
 }
